@@ -1,0 +1,196 @@
+:root {
+    --first-color: #D90062;
+    --second-color: #14192D;
+    --hero-title-color: #FFF;
+    --gray-light-color: #f3f3f3;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    
+}
+
+h2 {
+    text-align: center;
+    border-bottom: thin solid var(--first-color);
+    border-top: thin solid var(--first-color);
+    width: 250px;
+    margin: 1rem auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--second-color);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.menu a {
+    padding: 1rem;
+    font-style: 1.5rem;
+    font-weight: bold;
+    color: var(--first-color);
+}
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url("assets/pexels-kevin-ku-92347-577585.jpg");   
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.hero-image-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image-content h1 {
+    font-size: 7vw;
+    color: var(--hero-title-color);
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 200px;
+    font-weight: bold;
+    color: var(--hero-title-color);
+    background-color: var(--first-color);
+}
+
+
+
+.acerca-container {
+    display: flex;
+    
+    
+}
+
+.acerca-content-table {
+    width: 50%;
+    
+}
+
+.table{
+    width: 50%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    font-size: 0.9rem;
+    box-shadow: 0 0 1.4rem rgba(0, 0, 0, 0.45);
+    text-align: center;
+}
+
+.table thead tr {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+}
+
+.table tbody tr {
+    border-bottom: thin solid var(--first-color);
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #FFF;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: medium solid var(--first-color);
+}
+
+.acerca-content-photo {
+    width: 50%;
+    height: 70vh;
+}
+
+.photo {
+    padding: 1rem;
+}
+
+.photo img {
+    width: 100%;
+    height: 50vh;
+    margin: 1rem auto;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 2rem;
+    
+}
+
+.contact {
+    background-color: var(--gray-light-color);
+    padding: 1.5rem;
+}
+
+.contact-container {
+    width: 60%;
+    margin: 1rem auto;
+    background-color: #FFF;
+    padding: 1.5rem;
+    box-shadow: 0 0 1.4rem rgba(0, 0, 0, 0.45);
+}
+
+.contact-form * {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+
+.contact-form textarea {
+    resize: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--second-color);
+    color: #FFF;
+}

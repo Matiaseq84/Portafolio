@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header-container">
+            <div class="logo">
+                <a href="">Matias</a>
+            </div>
+            
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#acerca">Acerca</a>
+                <a href="#contacto">Contacto</a>
+            </nav>    
+        </section>
+    </header>
+    <main>
+        <section id="inicio" class="home">
+            <div class="hero-image">
+                <div class="hero-image-content">
+                    <h1>Bienvenidos a <br> mi sitio</h1>
+                    <a href="#contacto" class="btn">CONTACTAME</a>
+                </div>
+                
+            </div>
+        </section>
+        <section id="acerca" class="acerca">
+            <h2>ACERCA DE MI</h2>
+            <div class="acerca-container">
+                <div class="acerca-content-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>TECNOLOGÍAS</th>
+                                <th>TECNOLOGÍAS DESEADAS</th>   
+                                <th>HOBBIES</th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>HTML</td>
+                            <td>PHP</td>
+                            <td>DEPORTES</td>
+                            </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>COBOL</td>
+                            <td>COMPUTACIÓN</td>
+                        </tr>
+                        <tr>
+                            <td>JAVASCRIPT</td>
+                            <td>PYTHON</td>
+                            <td>LECTURA</td>
+                        </tr>
+                        <tr>
+                            <td>JAVA</td>
+                            <td>KOTLIN</td>
+                            <td>CINE</td>
+                        </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <div class="acerca-content-photo">
+                    <div class="photo">
+                        <img src="assets/Foto-perfil.png" alt="Foto Perfil">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="contact">
+            <h2>CONTACTAME</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Ingresá tu nombre *" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    <input type="email" name="email" placeholder="Ingresá tu correo *" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                    <textarea name="comments" cols="50" rows="10" placeholder="Dejame tus comentarios *" required></textarea>
+                    <input class="btn" type="submit" value="ENVIAR MENSAJE">
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <small>Sitio diseñado por Matías Quiñones</small>
+    </footer>
+</body>
+</html>
