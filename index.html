@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <section class="header-container">
+        <section class="header container">
             <div class="logo">
                 <a href="">Matias</a>
             </div>
@@ -16,6 +16,7 @@
             <nav class="menu">
                 <a href="#inicio">Inicio</a>
                 <a href="#acerca">Acerca</a>
+                <a href="#porftolio">Portfolio</a>
                 <a href="#contacto">Contacto</a>
             </nav>    
         </section>
@@ -24,41 +25,43 @@
         <section id="inicio" class="home">
             <div class="hero-image">
                 <div class="hero-image-content">
-                    <h1>Bienvenidos a <br> mi sitio</h1>
+                    <h2 class="hero-image-title">Bienvenidos a <br> mi sitio</h2>
                     <a href="#contacto" class="btn">CONTACTAME</a>
                 </div>
                 
             </div>
         </section>
-        <section id="acerca" class="acerca">
-            <h2 class="section-title">ACERCA DE MI</h2>
-            <div class="acerca-container">
-                
-                <div class="acerca-content-sobre-mi">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facere consequatur autem cum odio ducimus at? Doloremque quod,
-                     architecto impedit dolor perferendis voluptate voluptates excepturi. Ad molestias sequi ipsam officiis.</p>
-                </div>
-                <div class="acerca-content-photo">
-                    <div class="photo">
+        <section id="acerca" class="acerca container section">
+            <div class="acerca-content-sobre-mi">
+                <div class="text-center">
+                    <h1>Matías Quiñones</h1>
+                    <h5>programador <i>web</i></h5>
+                </div>                
+                <p>¡Hola! Soy estudiante de Desarrollo de Software y, aunque todavía no tengo experiencia profesional, sí 
+                    tengo muchas ganas, curiosidad y café encima. Me gusta imaginar soluciones, escribir código (a veces con 
+                    errores, pero siempre aprendiendo) y ver cómo las ideas se transforman en algo real. Estoy en constante 
+                    aprendizaje, probando tecnologías, creando pequeños proyectos y soñando con el día en que mi trabajo esté en 
+                    producción (y funcione sin bugs... o al menos con pocos 😅). Este portfolio es mi rincón digital donde 
+                    comparto lo que sé, lo que hago y lo que quiero construir. ¡Gracias por pasar!</p>
+            </div>
+            <div class="acerca-content-photo text-center">
                         <img src="assets/Foto-perfil.png" alt="Foto Perfil">
-                    </div>
-                </div>
-                <div class="acerca-content-table">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>TECNOLOGÍAS</th>
-                                <th>TECNOLOGÍAS DESEADAS</th>   
-                                <th>HOBBIES</th>
-                            </tr>
-                            
-                        </thead>
-                        <tbody>
-                            <tr>
+            </div>
+            <div class="acerca-content-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>TECNOLOGÍAS</th>
+                            <th>TECNOLOGÍAS DESEADAS</th>   
+                            <th>HOBBIES</th>
+                        </tr>                
+                    </thead>
+                    <tbody>
+                        <tr>
                             <td>HTML</td>
                             <td>PHP</td>
                             <td>DEPORTES</td>
-                            </tr>
+                        </tr>
                         <tr>
                             <td>CSS</td>
                             <td>COBOL</td>
@@ -74,91 +77,261 @@
                             <td>KOTLIN</td>
                             <td>CINE</td>
                         </tr>
-                        </tbody>
+                    </tbody>
                         
-                    </table>
-                </div>
-                
+                </table>
             </div>
         </section>
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio section" id="portfolio">
             <div class="container">
-                <h2 class="section-title">Trabajos</h2>
-            <a href="#trabajo-1" class="portfolio-card">
-                <img src="assets/portfolio-1.jpg" alt="Trabajo 1">
-                <div class="portfolio-card-info">
-                    <div>
-                        <h3>Proyecto 1</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
-                            ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
-                        </p>
+                <h2 class="section-title">MIS TRABAJOS</h2>
+                <a href="#trabajo-1" class="portfolio-card">
+                    <img src="assets/portfolio-1.jpg" alt="Trabajo 1">
+                    <div class="portfolio-card-info">
+                        <div>
+                            <h3>Proyecto 1</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
+                                ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#trabajo-2" class="portfolio-card">
-                <img src="assets/portfolio-2.jpg" alt="Trabajo 2">
-                <div class="portfolio-card-info">
-                    <div>
-                        <h3>Proyecto 2</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
-                            ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
-                        </p>
+                </a>
+                <a href="#trabajo-2" class="portfolio-card">
+                    <img src="assets/portfolio-2.jpg" alt="Trabajo 2">
+                    <div class="portfolio-card-info">
+                        <div>
+                            <h3>Proyecto 2</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
+                                ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#trabajo-3" class="portfolio-card">
-                <img src="assets/portfolio-3.jpg" alt="Trabajo 3">
-                <div class="portfolio-card-info">
-                    <div>
-                        <h3>Proyecto 3</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
-                            ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
-                        </p>
+                </a>
+                <a href="#trabajo-3" class="portfolio-card">
+                    <img src="assets/portfolio-3.jpg" alt="Trabajo 3">
+                    <div class="portfolio-card-info">
+                        <div>
+                            <h3>Proyecto 3</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
+                                ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#trabajo-4" class="portfolio-card">
-                <img src="assets/portfolio-4.jpg" alt="Trabajo 4">
-                <div class="portfolio-card-info">
-                    <div>
-                        <h3>Proyecto 4</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
-                            ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
-                        </p>
+                </a>
+                <a href="#trabajo-4" class="portfolio-card">
+                    <img src="assets/portfolio-4.jpg" alt="Trabajo 4">
+                    <div class="portfolio-card-info">
+                        <div>
+                            <h3>Proyecto 4</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
+                                ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#trabajo-5" class="portfolio-card">
-                <img src="assets/portfolio-5.jpg" alt="Trabajo 5">
-                <div class="portfolio-card-info">
-                    <div>
-                        <h3>Proyecto 5</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
-                            ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
-                        </p>
+                </a>
+                <a href="#trabajo-5" class="portfolio-card">
+                    <img src="assets/portfolio-5.jpg" alt="Trabajo 5">
+                    <div class="portfolio-card-info">
+                        <div>
+                            <h3>Proyecto 5</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
+                                ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#trabajo-6" class="portfolio-card">
-                <img src="assets/portfolio-6.jpg" alt="Trabajo 6">
-                <div class="portfolio-card-info">
-                    <div>
-                        <h3>Proyecto 6</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
-                            ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
-                        </p>
+                </a>
+                <a href="#trabajo-6" class="portfolio-card">
+                    <img src="assets/portfolio-6.jpg" alt="Trabajo 6">
+                    <div class="portfolio-card-info">
+                        <div>
+                            <h3>Proyecto 6</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor fugiat odio animi nesciunt ex ducimus nostrum incidunt magni voluptatibus 
+                                ipsa nihil aut qui sed, unde assumenda sapiente. Similique, animi nulla?
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </section>
+                </a>
             </div>
-            
+        </section>
+        <div class="modal" id="trabajo-1">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/portfolio-1.jpg" alt="Trabajo 1">
+                    <div class="portfolio-info">
+                        <h3>PROYECTO 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus, accusantium itaque laborum aut 
+                            nostrum aliquam, alias velit adipisci, ipsum inventore. Cupiditate reprehenderit assumenda voluptatem id, molestiae nemo animi fugit.
+                        </p>
+                        <div class="portfolio-details">
+                            <small><b>CLIENTE:</b></small>
+                            <small>-</small>
+                            <small><b>FECHA:</b></small>
+                            <small>-</small>
+                            <small><b>TIPO:</b></small>
+                            <small>-</small>
+                            <small><b>ENLACE:</b></small>
+                            <small><a href="#" target="_blank" rel="noopener">https://proyecto.com</a></small>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <div class="modal" id="trabajo-2">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/portfolio-2.jpg" alt="Trabajo 2">
+                    <div class="portfolio-info">
+                        <h3>PROYECTO 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus, accusantium itaque laborum aut 
+                            nostrum aliquam, alias velit adipisci, ipsum inventore. Cupiditate reprehenderit assumenda voluptatem id, molestiae nemo animi fugit.
+                        </p>
+                        <div class="portfolio-details">
+                            <small><b>CLIENTE:</b></small>
+                            <small>-</small>
+                            <small><b>FECHA:</b></small>
+                            <small>-</small>
+                            <small><b>TIPO:</b></small>
+                            <small>-</small>
+                            <small><b>ENLACE:</b></small>
+                            <small><a href="#" target="_blank" rel="noopener">https://proyecto.com</a></small>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </div>    
+        <div class="modal" id="trabajo-3">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/portfolio-3.jpg" alt="Trabajo 3">
+                    <div class="portfolio-info">
+                        <h3>PROYECTO 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus, accusantium itaque laborum aut 
+                            nostrum aliquam, alias velit adipisci, ipsum inventore. Cupiditate reprehenderit assumenda voluptatem id, molestiae nemo animi fugit.
+                        </p>
+                        <div class="portfolio-details">
+                            <small><b>CLIENTE:</b></small>
+                            <small>-</small>
+                            <small><b>FECHA:</b></small>
+                            <small>-</small>
+                            <small><b>TIPO:</b></small>
+                            <small>-</small>
+                            <small><b>ENLACE:</b></small>
+                            <small><a href="#" target="_blank" rel="noopener">https://proyecto.com</a></small>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="modal" id="trabajo-4">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/portfolio-4.jpg" alt="Trabajo 4">
+                    <div class="portfolio-info">
+                        <h3>PROYECTO 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus, accusantium itaque laborum aut 
+                            nostrum aliquam, alias velit adipisci, ipsum inventore. Cupiditate reprehenderit assumenda voluptatem id, molestiae nemo animi fugit.
+                        </p>
+                        <div class="portfolio-details">
+                            <small><b>CLIENTE:</b></small>
+                            <small>-</small>
+                            <small><b>FECHA:</b></small>
+                            <small>-</small>
+                            <small><b>TIPO:</b></small>
+                            <small>-</small>
+                            <small><b>ENLACE:</b></small>
+                            <small><a href="#" target="_blank" rel="noopener">https://proyecto.com</a></small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="modal" id="trabajo-5">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/portfolio-5.jpg" alt="Trabajo 5">
+                    <div class="portfolio-info">
+                        <h3>PROYECTO 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus, accusantium itaque laborum aut 
+                            nostrum aliquam, alias velit adipisci, ipsum inventore. Cupiditate reprehenderit assumenda voluptatem id, molestiae nemo animi fugit.
+                        </p>
+                        <div class="portfolio-details">
+                            <small><b>CLIENTE:</b></small>
+                            <small>-</small>
+                            <small><b>FECHA:</b></small>
+                            <small>-</small>
+                            <small><b>TIPO:</b></small>
+                            <small>-</small>
+                            <small><b>ENLACE:</b></small>
+                            <small><a href="#" target="_blank" rel="noopener">https://proyecto.com</a></small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="modal" id="trabajo-6">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/portfolio-6.jpg" alt="Trabajo 6">
+                    <div class="portfolio-info">
+                        <h3>PROYECTO 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus, accusantium itaque laborum aut 
+                            nostrum aliquam, alias velit adipisci, ipsum inventore. Cupiditate reprehenderit assumenda voluptatem id, molestiae nemo animi fugit.
+                        </p>
+                        <div class="portfolio-details">
+                            <small><b>CLIENTE:</b></small>
+                            <small>-</small>
+                            <small><b>FECHA:</b></small>
+                            <small>-</small>
+                            <small><b>TIPO:</b></small>
+                            <small>-</small>
+                            <small><b>ENLACE:</b></small>
+                            <small><a href="#" target="_blank" rel="noopener">https://proyecto.com</a></small>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </div>
         <section id="contacto" class="contact">
             <h2 class="section-title">CONTACTAME</h2>
             <div class="contact-container">
